@@ -14,7 +14,6 @@ improve this project. Here are some ways *you* can contribute:
 * Refactor code.
 * Fix [issues][].
 * Review patches.
-* Financially pledge using [gittip][].
 
 [issues]: https://github.com/mgauthier/timekit/issues
 
