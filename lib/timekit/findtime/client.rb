@@ -2,9 +2,7 @@ module Timekit
   class Findtime
     # Client class for the findtime resource
     class Client < Timekit::Client
-      def path
-        Timekit::FINDTIME_API_PATH
-      end
+      API_PATH = '/findtime'.freeze
 
       def query(
         emails = nil,
@@ -33,7 +31,7 @@ module Timekit
           ' (email,user id,calendar id)' unless
           params[:emails] || params[:user_ids] || params[:calendar_ids]
 
-        post('', params)
+        post(API_PATH, params)
       end
 
       def bulk_query(queries)

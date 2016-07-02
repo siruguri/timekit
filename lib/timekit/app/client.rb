@@ -2,12 +2,10 @@ module Timekit
   class App
     # Client class for the app resource
     class Client < Timekit::Client
-      def path
-        Timekit::APP_API_PATH
-      end
+      API_PATH = '/apps'.freeze
 
       def list
-        super
+        get(API_PATH)
       end
 
       def create(name, settings = {})
@@ -17,17 +15,17 @@ module Timekit
 
         params[:settings] = settings if settings
 
-        post('', params)
+        post(API_PATH, params)
       end
 
       def update(slug, settings)
         params = settings
 
-        put("/#{slug}", params)
+        put(API_PATH + '/' + slug, params)
       end
 
       def delete(slug)
-        super("/#{slug}")
+        super(API_PATH + '/' + slug)
       end
     end
   end

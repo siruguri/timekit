@@ -22,7 +22,7 @@ module Timekit
 
       Timekit::Request.instance.send(
         :post,
-        "#{Timekit.config[:api_endpoint]}#{Timekit::USER_API_PATH}",
+        "#{Timekit.config[:api_endpoint]}#{Timekit::User::Client::API_PATH}",
         params,
         'Timekit-App' => Timekit.config[:app]
       )
@@ -36,7 +36,7 @@ module Timekit
 
       Timekit::Request.instance.send(
         :post,
-        "#{Timekit.config[:api_endpoint]}#{Timekit::AUTH_API_PATH}",
+        "#{Timekit.config[:api_endpoint]}/auth",
         params,
         'Timekit-App' => Timekit.config[:app]
       )

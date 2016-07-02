@@ -16,7 +16,7 @@ module Timekit
     # Wrapper method for the timekit request methods of the same names
     #
     [:get, :put, :post, :delete].each do |verb|
-      define_method(verb) do |token = '', params = {}|
+      define_method(verb) do |path, params = {}|
         # puts "Timekit::Client::#{verb} => #{path}#{token}"
         headers = {
           'Timekit-App' => @app,
@@ -25,19 +25,11 @@ module Timekit
 
         Timekit::Request.instance.send(
           __method__,
-          "#{path}#{token}",
+          path,
           params,
           headers
         )
       end
-    end
-
-    def list
-      get
-    end
-
-    def show(id)
-      get("/#{id}")
     end
 
     private

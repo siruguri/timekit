@@ -3,9 +3,7 @@ module Timekit
     class Filtercollections
       # Client class for the filtercollection resource
       class Client < Timekit::Client
-        def path
-          "#{Timekit::FINDTIME_API_PATH}#{Timekit::FILTERCOLLECTIONS_API_PATH}"
-        end
+        API_PATH = '/findtime/filtercollections'.freeze
 
         def create(
           and_conditions = nil,
@@ -18,11 +16,11 @@ module Timekit
             after: after_conditions
           }
 
-          post('', params)
+          post(API_PATH, params)
         end
 
         def show(id)
-          super
+          get(API_PATH + '/' + id.to_s)
         end
       end
     end

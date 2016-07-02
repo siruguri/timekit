@@ -2,9 +2,7 @@ module Timekit
   class Event
     # Client class for the event resource
     class Client < Timekit::Client
-      def path
-        Timekit::EVENT_API_PATH
-      end
+      API_PATH = '/events'.freeze
 
       def list(start_datetime, end_datetime)
         params = {
@@ -12,11 +10,11 @@ module Timekit
           end: end_datetime
         }
 
-        get('', params)
+        get(API_PATH, params)
       end
 
       def show(id)
-        super
+        get(API_PATH + '/' + id.to_s)
       end
 
       def create(
@@ -56,7 +54,7 @@ module Timekit
                                          !value.nil?
         end
 
-        post('', params)
+        post(API_PATH, params)
       end
 
       def update(
@@ -85,11 +83,11 @@ module Timekit
             [true, false].include?(value) || !value.nil?
         end
 
-        put("/#{id}", params)
+        put(API_PATH + '/' + id.to_s, params)
       end
 
       def delete(id)
-        super("/#{id}")
+        super(API_PATH + '/' + id.to_s)
       end
     end
   end

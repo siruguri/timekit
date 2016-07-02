@@ -2,16 +2,14 @@ module Timekit
   class Booking
     # Client class for the booking resource
     class Client < Timekit::Client
-      def path
-        Timekit::BOOKING_API_PATH
-      end
+      API_PATH = '/bookings'.freeze
 
       def list
-        super
+        get(API_PATH)
       end
 
       def show(id)
-        super
+        get(API_PATH + '/' + id)
       end
 
       def create(
@@ -28,14 +26,14 @@ module Timekit
 
         params[:action] = action if action
 
-        post('', params)
+        post(API_PATH, params)
       end
 
       def update(
         id,
         action
       )
-        put("/#{id}/#{action}")
+        put(API_PATH + '/' + id + '/' + action)
       end
     end
   end

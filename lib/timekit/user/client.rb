@@ -2,16 +2,14 @@ module Timekit
   class User
     # Client class for the user resource
     class Client < Timekit::Client
-      def path
-        Timekit::USER_API_PATH
-      end
+      API_PATH = '/users'.freeze
 
       def me
-        show('me')
+        get(API_PATH + '/me')
       end
 
       def timezone(email)
-        get("/timezone/#{email}")
+        get(API_PATH + '/timezone/' + email)
       end
 
       def update(
@@ -27,7 +25,7 @@ module Timekit
         params[:timezone] = timezone if timezone
         params[:password] = password if password
 
-        put('/me', params)
+        put(API_PATH + '/me', params)
       end
 
       def reset_password(email)
@@ -35,7 +33,7 @@ module Timekit
           email: email
         }
 
-        post('/resetpassword', params)
+        post(API_PATH + '/resetpassword', params)
       end
     end
   end

@@ -2,12 +2,10 @@ module Timekit
   class Credential
     # Client class for the credential resource
     class Client < Timekit::Client
-      def path
-        Timekit::CREDENTIAL_API_PATH
-      end
+      API_PATH = '/credentials'.freeze
 
       def list
-        super
+        get(API_PATH)
       end
 
       def create(
@@ -26,11 +24,11 @@ module Timekit
         params[:referrer] = referrer if referrer
         params[:expires] = expires if expires
 
-        post('', params)
+        post(API_PATH, params)
       end
 
       def delete(id)
-        super("/#{id}")
+        super(API_PATH + '/' + id.to_s)
       end
     end
   end

@@ -2,20 +2,18 @@ module Timekit
   class Widget
     # Client class for the widget resource
     class Client < Timekit::Client
-      def path
-        Timekit::WIDGET_API_PATH
-      end
+      API_PATH = '/widgets'.freeze
 
       def list
-        super
+        get(API_PATH)
       end
 
       def embed(id)
-        get("/embed/#{id}")
+        get(API_PATH + '/embed/' + id.to_s)
       end
 
       def hosted(slug)
-        get("/hosted/#{slug}")
+        get(API_PATH + '/hosted/' + slug)
       end
 
       def update(
@@ -31,7 +29,7 @@ module Timekit
         params[:name] = name if name
         params[:slug] = slug if slug
 
-        put("/#{id}", params)
+        put(API_PATH + '/' + id.to_s, params)
       end
 
       def create(
@@ -45,11 +43,11 @@ module Timekit
           slug: slug
         }
 
-        post('', params)
+        post(API_PATH, params)
       end
 
       def delete(id)
-        super("/#{id}")
+        super(API_PATH + '/' + id.to_s)
       end
     end
   end

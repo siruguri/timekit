@@ -15,17 +15,6 @@ require_relative './timekit/booking'
 # Timekit class is responsible for handling configurations
 # and provides helpers for instantiating clients for apis
 module Timekit
-  AUTH_API_PATH = '/auth'.freeze
-  USER_API_PATH = '/users'.freeze
-  APP_API_PATH = '/apps'.freeze
-  CALENDAR_API_PATH = '/calendars'.freeze
-  CREDENTIAL_API_PATH = '/credentials'.freeze
-  EVENT_API_PATH = '/events'.freeze
-  FINDTIME_API_PATH = '/findtime'.freeze
-  FILTERCOLLECTIONS_API_PATH = '/filtercollections'.freeze
-  WIDGET_API_PATH = '/widgets'.freeze
-  BOOKING_API_PATH = '/bookings'.freeze
-
   @config = Timekit::Config.new
 
   def self.config

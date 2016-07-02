@@ -2,9 +2,7 @@ module Timekit
   class Calendar
     # Client class for the calendar resource
     class Client < Timekit::Client
-      def path
-        Timekit::CALENDAR_API_PATH
-      end
+      API_PATH = '/calendars'.freeze
 
       def create(
         name,
@@ -20,19 +18,19 @@ module Timekit
         params[:backgroundcolor] = background_color if background_color
         params[:foregroundcolor] = foreground_color if foreground_color
 
-        post('', params)
+        post(API_PATH, params)
       end
 
       def list
-        super
+        get(API_PATH)
       end
 
       def show(id)
-        super
+        get(API_PATH + '/' + id.to_s)
       end
 
       def delete(id)
-        super("/#{id}")
+        super(API_PATH + '/' + id.to_s)
       end
     end
   end
