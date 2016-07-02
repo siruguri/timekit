@@ -1,8 +1,10 @@
 # The Timekit Ruby Gem
 
 [![Gem Version](http://img.shields.io/gem/v/timekit.svg)][gem]
+[![Build Status](http://img.shields.io/travis/mgauthier/timekit.svg)][travis]
 
 [gem]: https://rubygems.org/gems/timekit
+[travis]: https://travis-ci.org/mgauthier/timekit
 
 A Ruby interface to the Timekit API.
 
