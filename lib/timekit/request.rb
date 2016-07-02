@@ -1,3 +1,6 @@
+require 'singleton'
+require 'rest-client'
+
 module Timekit
   # class for executing http requests against timekit api
   class Request

@@ -10,6 +10,7 @@ require_relative './timekit/request'
 require_relative './timekit/findtime'
 require_relative './timekit/filtercollection'
 require_relative './timekit/widget'
+require_relative './timekit/booking'
 
 # Timekit class is responsible for handling configurations
 # and provides helpers for instantiating clients for apis
@@ -23,6 +24,7 @@ module Timekit
   FINDTIME_API_PATH = '/findtime'.freeze
   FILTERCOLLECTIONS_API_PATH = '/filtercollections'.freeze
   WIDGET_API_PATH = '/widgets'.freeze
+  BOOKING_API_PATH = '/bookings'.freeze
 
   @config = Timekit::Config.new
 
@@ -66,5 +68,9 @@ module Timekit
 
   def self.widget_client
     Timekit::Widget::Client.new(config[:app], config[:credentials])
+  end
+
+  def self.booking_client
+    Timekit::Booking::Client.new(config[:app], config[:credentials])
   end
 end

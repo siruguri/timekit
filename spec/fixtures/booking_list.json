@@ -1,0 +1,83 @@
+{
+  "data": [
+    {
+      "id": "f68979ff-27da-4afd-8d0c-847f9340331b",
+      "state": "declined",
+      "graph": "confirm_decline",
+      "completed": true,
+      "possible_actions": [],
+      "created_at": "2016-02-11T12:39:45+0100",
+      "updated_at": "2016-02-11T13:12:01+0100",
+      "attributes": {
+        "event_info": {
+          "start": "2015-01-01T09:00:00+0100",
+          "end": "2015-01-01T14:00:00+0100",
+          "what": "Mens haircut",
+          "where": "Sesame St, Middleburg, FL 32068, USA",
+          "description": "Please arrive 10 minutes before you time begin"
+        }
+      },
+      "calendar": {
+        "id": "c91c5d04-2a57-46c0-ab35-e489dadf132e",
+        "name": "My calendar",
+        "display_name": "My calendar",
+        "description": "Ut adipisci non autem cum ut id.",
+        "foregroundcolor": "#25d6be",
+        "backgroundcolor": "#ea1cb8",
+        "created_at": "2016-02-15T13:21:42+0100",
+        "updated_at": "2016-02-15T13:21:42+0100"
+      },
+      "customers": [
+        {
+          "id": "a728e860-99c7-4009-8843-7d9ac5d7f53f",
+          "name": "Marty McFly",
+          "email": "marty.mcfly@timekit.io",
+          "phone": "1-591-001-5403",
+          "voip": "McFly",
+          "timezone": "America/Los_Angeles"
+        }
+      ]
+    },
+    {
+      "id": "f68979ff-27da-4afd-8d0c-847f9340331b",
+      "state": "initialized",
+      "graph": "confirm_decline",
+      "completed": false,
+      "possible_actions": [
+        "confirm",
+        "reject"
+      ],
+      "created_at": "2016-02-11T12:39:45+0100",
+      "updated_at": "2016-02-11T13:12:01+0100",
+      "attributes": {
+        "event_info": {
+          "start": "2015-01-01T09:00:00+0100",
+          "end": "2015-01-01T14:00:00+0100",
+          "what": "Mens haircut",
+          "where": "Sesame St, Middleburg, FL 32068, USA",
+          "description": "Please arrive 10 minutes before you time begin"
+        }
+      },
+      "calendar": {
+        "id": "c91c5d04-2a57-46c0-ab35-e489dadf132e",
+        "name": "My calendar",
+        "display_name": "My calendar",
+        "description": "Ut adipisci non autem cum ut id.",
+        "foregroundcolor": "#25d6be",
+        "backgroundcolor": "#ea1cb8",
+        "created_at": "2016-02-15T13:21:42+0100",
+        "updated_at": "2016-02-15T13:21:42+0100"
+      },
+      "customers": [
+        {
+          "id": "a728e860-99c7-4009-8843-7d9ac5d7f53f",
+          "name": "Marty McFly",
+          "email": "marty.mcfly@timekit.io",
+          "phone": "1-591-001-5403",
+          "voip": "McFly",
+          "timezone": "America/Los_Angeles"
+        }
+      ]
+    }
+  ]
+}

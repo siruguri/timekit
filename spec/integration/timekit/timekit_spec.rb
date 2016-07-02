@@ -74,4 +74,12 @@ describe Timekit do
       expect(subject).to be_a Timekit::Widget::Client
     end
   end
+
+  describe '.booking_client' do
+    subject { Timekit.booking_client }
+
+    it 'should return client' do
+      expect(subject).to be_a Timekit::Booking::Client
+    end
+  end
 end

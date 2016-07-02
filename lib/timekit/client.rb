@@ -1,3 +1,5 @@
+require 'base64'
+
 module Timekit
   class Client
     def initialize(app = nil, authorization = nil)

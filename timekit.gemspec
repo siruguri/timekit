@@ -16,5 +16,5 @@ Gem::Specification.new do |s|
   s.license     = 'MIT'
   s.require_paths = %w(lib)
   s.files = %w(CHANGELOG.md CONTRIBUTING.md LICENSE.md README.md timekit.gemspec) + Dir['lib/**/*.rb']
-  spec.version = Timekit::Version
+  s.version = Timekit::Version
 end
