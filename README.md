@@ -74,23 +74,23 @@ client.show('booking-id')
 **Create**
 ```ruby
 client.create(
-  'confirm_decline',
-  'create',
+  'booking-graph-type', # 'confirm-decline'
   {
-    start: '2015-03-01T08:00:00+00:00',
-    end: '2015-03-01T13:00:00+00:00',
-    what: 'Mens haircut',
-    where: 'Sesame St, Middleburg, FL 32068, USA',
+    start: 'start-date',
+    end: 'end-date',
+    what: 'booking-title',
+    where: 'booking-address',
     calendar_id: 'replace-with-id',
-    description: 'Please arrive 10 minutes before you time begin'
+    description: 'booking-description'
   },
   {
-    name: 'Marty McFly',
-    email: 'marty.mcfly@timekit.io',
-    phone: '1-591-001-5403',
-    voip: 'McFly',
-    timezone: 'America/Los_Angeles'
-  }
+    name: 'booking-customer-name',
+    email: 'booking-customer-email',
+    phone: 'booking-customer-phone',
+    voip: 'booking-customer-voip',
+    timezone: 'booking-timezone'
+  },
+  'booking-action', # 'create'
 }
 ```
 
