@@ -1,5 +1,3 @@
-# ENV['RAILS_ENV'] ||= 'test'
-
 require 'simplecov'
 require 'coveralls'
 SimpleCov.formatters = [
@@ -18,13 +16,6 @@ require 'rest-client'
 require 'faker'
 require 'timekit'
 require 'rspec'
-# require 'stringio'
-# require 'tempfile'
-# require 'timecop'
-# require 'webmock/rspec'
-# require File.expand_path('../../config/environment', __FILE__)
-
-# require 'rails/test_help'
 require 'webmock/rspec'
 
 WebMock.disable_net_connect!(allow: 'coveralls.io')

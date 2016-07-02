@@ -2,9 +2,11 @@
 
 [![Gem Version](http://img.shields.io/gem/v/timekit.svg)][gem]
 [![Build Status](http://img.shields.io/travis/mgauthier/timekit.svg)][travis]
+[![Coverage Status](http://img.shields.io/coveralls/mgauthier/timekit.svg)][coveralls]
 
 [gem]: https://rubygems.org/gems/timekit
 [travis]: https://travis-ci.org/mgauthier/timekit
+[coveralls]: https://coveralls.io/r/mgauthier/timekit
 
 A Ruby interface to the Timekit API.
 
