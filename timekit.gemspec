@@ -15,6 +15,8 @@ Gem::Specification.new do |s|
   s.homepage    = 'http://rubygems.org/gems/timekit'
   s.license     = 'MIT'
   s.require_paths = %w(lib)
-  s.files = %w(CHANGELOG.md CONTRIBUTING.md LICENSE.md README.md timekit.gemspec) + Dir['lib/**/*.rb']
+  s.files = %w(
+    CHANGELOG.md CONTRIBUTING.md LICENSE.md README.md timekit.gemspec
+  ) + Dir['lib/**/*.rb']
   s.version = Timekit::Version
 end
