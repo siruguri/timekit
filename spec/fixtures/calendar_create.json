@@ -1,0 +1,14 @@
+{
+  "data": {
+    "id": "bfa0b9fa-36aa-4ae6-8096-f3b20fbed1d2",
+    "name": "My Calendar",
+    "description": "This is my personal calendar",
+    "foregroundcolor": "#000000",
+    "backgroundcolor": "#FFFFFF",
+    "provider_id": "my-calendar",
+    "provider_access": "owner",
+    "provider_primary": false,
+    "provider_sync": false,
+    "created_at": "2016-02-29T18:41:38+0100",
+    "updated_at": "2016-06-02T23:00:03+0200"  }
+}

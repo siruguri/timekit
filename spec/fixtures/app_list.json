@@ -1,0 +1,21 @@
+{
+  "data":[
+    {
+      "id": "Tqq9fhwtqtHDiUI5man788uBPyUKThUn",
+      "slug": "random-app1",
+      "settings": {
+        "name": "Random App1",
+        "callback": "http://myapp.io/#/googlecallback"
+      }
+    },
+    {
+      "id": "QACP0k7ykg0n8fml4IUjZW5Oiz0eDcq5",
+      "slug": "random-app2",
+      "settings": {
+        "name": "Random App1",
+        "callback": "http://myotherapp.io/#/googlecallback"
+      }
+    }
+
+  ]
+}

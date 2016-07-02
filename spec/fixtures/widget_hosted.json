@@ -1,0 +1,11 @@
+{
+  "data": {
+    "id": "826ddc8e-8698-45be-9320-0c81dcf797d9",
+    "slug": "my-test-widget",
+    "config": {
+      "email": "marty.mcfly@timekit.io",
+      "calendar": "3653d9a9-46d3-4270-8d34-34b3d871128d",
+      "apiToken": "xwcgiK7u7EZSpIkCSt3Oaq1eFy1fZBJA"
+    }
+  }
+}

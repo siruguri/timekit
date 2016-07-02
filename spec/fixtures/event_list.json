@@ -1,0 +1,44 @@
+{
+  "data": [
+    {
+      "id": "31c354d2-7249-4877-b9b7-d076e8e4b676",
+      "what": "Ut voluptatum distinctio hic et est consequuntur fugiat.",
+      "where": "Sunt fugiat reprehenderit delectus quo odit saepe ipsam.",
+      "rsvp": "tentative",
+      "allDay": false,
+      "start": "2015-04-19T08:00:00+00:00",
+      "end": "2015-04-19T13:00:00+00:00",
+      "description": "Donec sed facilisis lorem. Ut vel nunc tellus. Etiam auctor, felis at semper interdum, metus sem porta orci, non facilisis nulla ante eu lorem."
+    },
+    {
+      "id": "8d30b27e-ffd3-4b41-a7c0-da334d4ebbdd",
+      "what": "Et molestiae numquam aut facilis beatae.",
+      "where": "Debitis rerum qui accusamus minima accusamus.",
+      "rsvp": "tentative",
+      "allDay": false,
+      "start": "2015-03-25T21:00:00+00:00",
+      "end": "2015-03-25T23:00:00+00:00",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": "faba6e72-1b8e-4bb2-9b24-e6e878be488a",
+      "what": "Et vitae occaecati expedita sit consequuntur aliquam in.",
+      "where": "Sequi ratione sunt dignissimos quis id.",
+      "rsvp": "accepted",
+      "allDay": false,
+      "start": "2015-04-03T09:00:00+00:00",
+      "end": "2015-04-03T11:30:00+00:00",
+      "description": "Felis at semper interdum, metus sem porta orci, non facilisis nulla."
+    },
+    {
+      "id": "ba5f7cb8-485c-4b24-8451-c36e884c584a",
+      "what": "Voluptatibus iure est dolores optio alias.",
+      "where": "Dolor et odio cum totam numquam incidunt.",
+      "rsvp": "declined",
+      "allDay": false,
+      "start": "2015-04-20T21:00:00+00:00",
+      "end": "2015-04-20T23:00:00+00:00",
+      "description": ""
+    }
+  ]
+}

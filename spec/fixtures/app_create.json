@@ -1,0 +1,10 @@
+{
+  "data": {
+    "id": "MJnllL3rheUYLb0apziz9WH1VXDSuNW3",
+    "slug": "test-121",
+    "settings": {
+      "name": "Test 121",
+      "callback": "http://myapp.io/#/googlecallback"
+    }
+  }
+}

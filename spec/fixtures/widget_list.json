@@ -1,0 +1,77 @@
+{
+  "data": [
+    {
+      "id": "00f4d4ac-a64b-4752-95db-309d5bddf72c",
+      "name": "Martys test widget",
+      "slug": "martys-widget",
+      "config": {
+        "email": "marty.mcfly@timekit.io",
+        "calendar": "b7bd09ab-bbb5-4c83-ae5f-ee0ede4124ce",
+        "apiToken": "E6W4riZQcBfaAJkspVgODZD69qDNMZiV",
+        "bookingGraph": "instant",
+        "name": "Marty's calendar",
+        "localization": {
+          "timeDateFormat": "12h-mdy-sun",
+          "showTimezoneHelper": true
+        },
+        "timekitFindTime": {
+          "filters": {
+            "and": [{
+              "exclude_weekend": []
+            }]
+          },
+          "calendar_ids": [
+            "b7bd09ab-2bb5-4c83-ae5f-ee0e5e4124ce",
+            "15b18888-d56a-4f7c-8b31-643140be7dc5"
+          ],
+          "emails": [],
+          "length": "30 minutes"
+        },
+        "timekitCreateBooking": {
+          "event": {
+            "where": "Hill Valley"
+          }
+        }
+      },
+      "created_at": "2016-04-27T15:24:07+0200",
+      "updated_at": "2016-06-02T09:05:44+0200"
+    },
+    {
+      "id": "1a54db8e-46c3-48b6-8644-6ffd164de1b6",
+      "name": "Another test widget",
+      "slug": "c9f3s40k",
+      "config": {
+        "email": "marty.mcfly@timekit.io",
+        "calendar": "61263a27-5e20-4f80-a7f5-9ac0c3b66cf3",
+        "apiToken": "Aq8mLNjdXKcqxNFNihDIpoKPlHxrFBil",
+        "bookingGraph": "confirm_decline",
+        "name": "Marty the Mayn",
+        "timekitFindTime": {
+          "length": "1 hour"
+        },
+        "localization": {
+          "timeDateFormat": "12h-mdy-sun",
+          "showTimezoneHelper": false
+        },
+        "timekitCreateBooking": {
+          "event": {
+            "where": "Skype"
+          }
+        },
+        "bookingFields": {
+          "comment": {
+            "enabled": true
+          },
+          "phone": {
+            "enabled": false
+          },
+          "voip": {
+            "enabled": false
+          }
+        }
+      },
+      "created_at": "2016-04-29T17:04:57+0200",
+      "updated_at": "2016-05-25T08:31:12+0200"
+    }
+  ]
+}

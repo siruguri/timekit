@@ -1,0 +1,14 @@
+{
+  "data": {
+    "id": "d187d6e0-d6cb-409a-ae60-45a8fd0ec879",
+    "first_name": "Peter",
+    "last_name": "Hansen",
+    "name": "Peter Hansen",
+    "email": "ph@timekit.io",
+    "image": "http://www.link-to-img.com/image.png",
+    "activated": false,
+    "timezone": "Europe/Copenhagen",
+    "last_sync": null,
+    "api_token": "qp9kzAxarYBUqJVqj6uZADKwIL0jvWdXfQfxEKwv"
+  }
+}

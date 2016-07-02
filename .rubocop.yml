@@ -1,0 +1,15 @@
+Documentation:
+  Enabled: false
+Metrics/MethodLength:
+  CountComments: false  # count full line comments?
+  Max: 35
+# TODO reduce back to 5
+Metrics/ParameterLists:
+  # Max: 5
+  Max: 15
+  CountKeywordArgs: true
+Metrics/AbcSize:
+  # The ABC size is a calculated magnitude, so this number can be a Fixnum or
+  # a Float.
+  # Max: 15
+  Max: 20

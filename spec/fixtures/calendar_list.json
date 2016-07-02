@@ -1,0 +1,30 @@
+{
+  "data": [
+    {
+      "id": "bfa0b9fa-36aa-4ae6-8096-f3b20fbed1d2",
+      "name": "Primary",
+      "description": "Laboriosam vitae minus",
+      "foregroundcolor": "#938710",
+      "backgroundcolor": "#518d83",
+      "provider_id": "my-google-calendar",
+      "provider_access": "owner",
+      "provider_primary": true,
+      "provider_sync": true,
+      "created_at": "2016-02-29T18:41:38+0100",
+      "updated_at": "2016-06-02T23:00:03+0200"
+    },
+    {
+      "id": "3e614av8-05g4-11e5-af06-000205005eg6",
+      "name": "Work",
+      "description": "Consequatur doloribus",
+      "foregroundcolor": "#ed2ba6",
+      "backgroundcolor": "#9b502a",
+      "provider_id": "my-other-google-calendar",
+      "provider_access": "reader",
+      "provider_primary": false,
+      "provider_sync": false,
+      "created_at": "2016-02-29T18:41:38+0100",
+      "updated_at": "2016-06-02T23:00:03+0200"
+    }
+  ]
+}
