@@ -1,5 +1,8 @@
-# Ignore bundler config.
-/.bundle
-
-coverage
 *.gem
+*~
+.bundle
+.rvmrc
+Gemfile.lock
+coverage/*
+doc/*
+log/*
