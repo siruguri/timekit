@@ -330,7 +330,6 @@ client.delete('widget-id')
 This library aims to support and is [tested against][travis] the following Ruby
 versions:
 
-* Ruby 2.0.0
 * Ruby 2.1
 * Ruby 2.2
 * Ruby 2.3
