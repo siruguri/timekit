@@ -15,7 +15,7 @@ module Timekit
 
     # @return [Integer]
     def patch
-      0
+      2
     end
 
     # @return [Integer, NilClass]

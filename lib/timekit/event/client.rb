@@ -40,20 +40,18 @@ module Timekit
           calendar_id: calendar_id
         }
 
-        optional_params = [
-          :participants,
-          :invite,
-          :description,
-          :my_rsvp,
-          :sync_provider,
-          :all_day
-        ]
-
-        optional_params.each do |name|
-          value = binding.local_variable_get(name)
-          params[name.to_sym] = value if [true, false].include?(value) ||
-                                         !value.nil?
-        end
+        params = set_optional_params(
+          binding,
+          [
+            :participants,
+            :invite,
+            :description,
+            :my_rsvp,
+            :sync_provider,
+            :all_day
+          ],
+          params
+        )
 
         post(API_PATH, params)
       end
@@ -71,24 +69,34 @@ module Timekit
         params[:start] = event_start if event_start
         params[:end] = event_end if event_end
 
-        optional_params = [
-          :what,
-          :where,
-          :participants,
-          :all_day
-        ]
-
-        optional_params.each do |name|
-          value = binding.local_variable_get(name)
-          params[name.to_sym] = value if
-            [true, false].include?(value) || !value.nil?
-        end
+        params = set_optional_params(
+          binding,
+          [
+            :what,
+            :where,
+            :participants,
+            :all_day
+          ],
+          params
+        )
 
         put(API_PATH + '/' + id.to_s, params)
       end
 
       def delete(id)
         super(API_PATH + '/' + id.to_s)
+      end
+
+      private
+
+      def set_optional_params(binding, optional_params, params)
+        optional_params.each do |name|
+          value = binding.local_variable_get(name)
+          params[name.to_sym] = value if
+            [true, false].include?(value) || !value.nil?
+        end
+
+        params
       end
     end
   end
