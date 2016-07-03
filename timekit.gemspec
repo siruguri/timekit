@@ -12,11 +12,12 @@ Gem::Specification.new do |s|
   s.authors     = ['Michael Gauthier']
   s.email       = 'michael.gauthier@gmail.com'
   s.files       = ['lib/timekit.rb']
-  s.homepage    = 'http://rubygems.org/gems/timekit'
+  s.homepage    = 'https://github.com/mgauthier/timekit'
   s.license     = 'MIT'
   s.require_paths = %w(lib)
   s.files = %w(
     CHANGELOG.md CONTRIBUTING.md LICENSE.md README.md timekit.gemspec
   ) + Dir['lib/**/*.rb']
   s.version = Timekit::Version
+  s.required_ruby_version = '~> 2.1'
 end
