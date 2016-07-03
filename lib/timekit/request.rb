@@ -24,7 +24,7 @@ module Timekit
       # " #{BASE_URL}#{path}, #{params}, #{headers}"
       RestClient::Request.execute(
         method: verb.downcase.to_sym,
-        url: "#{BASE_URL}#{path}",
+        url: BASE_URL + path,
         payload: params ? params.to_json : nil,
         headers: headers
       )

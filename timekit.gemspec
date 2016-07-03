@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'timekit/version'
 
 Gem::Specification.new do |s|
-  s.add_dependency 'rest-client', '~> 1.6'
+  s.add_dependency 'rest-client', '~> 2.0'
   s.name        = 'timekit'
   s.version     = '0.1.0'
   s.date        = '2016-06-02'
