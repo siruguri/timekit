@@ -20,6 +20,7 @@ group :test do
   gem 'simplecov'
   gem 'coveralls'
   gem 'rubocop', require: false
+  gem 'mime-types', '~> 2.0'
 end
 
 gemspec
