@@ -5,6 +5,8 @@ gem 'rake'
 
 platforms :jruby do
   gem 'jruby-openssl'
+  gem 'tins', '~> 1.6.0'
+  gem 'mime-types', '~> 2.0'
 end
 
 group :development do
@@ -20,7 +22,6 @@ group :test do
   gem 'simplecov'
   gem 'coveralls'
   gem 'rubocop', require: false
-  gem 'mime-types', '~> 2.0'
 end
 
 gemspec
