@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'singleton'
 require 'rest-client'
 
@@ -6,7 +7,7 @@ module Timekit
   class Request
     include Singleton
 
-    BASE_URL = 'https://api.timekit.io/v2'.freeze
+    BASE_URL = 'https://api.timekit.io/v2'
 
     [:get, :put, :post, :delete].each do |verb|
       define_method(verb) do |path, params, headers|

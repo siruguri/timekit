@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 describe Timekit::Booking::Client do
   before(:all) do
     @client = Timekit::Booking::Client.new

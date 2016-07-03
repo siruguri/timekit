@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 describe Timekit::Calendar::Client do
   before(:all) do
     @client = Timekit::Calendar::Client.new

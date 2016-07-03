@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require_relative './timekit/config'
 require_relative './timekit/client'
 require_relative './timekit/authorization'

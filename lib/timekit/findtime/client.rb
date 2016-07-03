@@ -1,8 +1,9 @@
+# frozen_string_literal: true
 module Timekit
   class Findtime
     # Client class for the findtime resource
     class Client < Timekit::Client
-      API_PATH = '/findtime'.freeze
+      API_PATH = '/findtime'
 
       def query(
         emails = nil,

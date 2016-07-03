@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 describe Timekit::Filtercollection do
   before(:each) do
     subject { Timekit::Filtercollection.new }

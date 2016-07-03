@@ -1,8 +1,9 @@
+# frozen_string_literal: true
 module Timekit
   class Widget
     # Client class for the widget resource
     class Client < Timekit::Client
-      API_PATH = '/widgets'.freeze
+      API_PATH = '/widgets'
 
       def list
         get(API_PATH)

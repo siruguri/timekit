@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module Timekit
   class Config < Hash
     CONFIG_KEYS = [

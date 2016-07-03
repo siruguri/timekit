@@ -1,8 +1,9 @@
+# frozen_string_literal: true
 module Timekit
   class Event
     # Client class for the event resource
     class Client < Timekit::Client
-      API_PATH = '/events'.freeze
+      API_PATH = '/events'
 
       def list(start_datetime, end_datetime)
         params = {

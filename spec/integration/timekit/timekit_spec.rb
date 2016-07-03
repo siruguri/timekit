@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 describe Timekit do
   describe '.configure' do
     before(:all) do

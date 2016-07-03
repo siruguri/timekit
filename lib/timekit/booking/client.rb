@@ -1,8 +1,9 @@
+# frozen_string_literal: true
 module Timekit
   class Booking
     # Client class for the booking resource
     class Client < Timekit::Client
-      API_PATH = '/bookings'.freeze
+      API_PATH = '/bookings'
 
       def list
         get(API_PATH)

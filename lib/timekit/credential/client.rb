@@ -1,8 +1,9 @@
+# frozen_string_literal: true
 module Timekit
   class Credential
     # Client class for the credential resource
     class Client < Timekit::Client
-      API_PATH = '/credentials'.freeze
+      API_PATH = '/credentials'
 
       def list
         get(API_PATH)

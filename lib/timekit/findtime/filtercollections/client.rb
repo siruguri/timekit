@@ -1,9 +1,10 @@
+# frozen_string_literal: true
 module Timekit
   class Findtime
     class Filtercollections
       # Client class for the filtercollection resource
       class Client < Timekit::Client
-        API_PATH = '/findtime/filtercollections'.freeze
+        API_PATH = '/findtime/filtercollections'
 
         def create(
           and_conditions = nil,

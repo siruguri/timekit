@@ -1,8 +1,9 @@
+# frozen_string_literal: true
 module Timekit
   class Calendar
     # Client class for the calendar resource
     class Client < Timekit::Client
-      API_PATH = '/calendars'.freeze
+      API_PATH = '/calendars'
 
       def create(
         name,

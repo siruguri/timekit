@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module Timekit
   class Authorization
     attr_reader :email, :api_token
