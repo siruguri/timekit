@@ -32,9 +32,9 @@ module Timekit
 
       def update(
         id,
-        action
+        action, params = {}
       )
-        put(API_PATH + '/' + id + '/' + action)
+        put(API_PATH + '/' + id + '/' + action, params)
       end
     end
   end
